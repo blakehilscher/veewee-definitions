@@ -1,6 +1,6 @@
 Veewee::Session.declare({
-  :cpu_count => '2',
-  :memory_size=> '1024',
+  :cpu_count => '1',
+  :memory_size=> '2048',
   :disk_size => '10140',
   :disk_format => 'VDI',
   :hostiocache => 'off',
@@ -16,7 +16,7 @@ Veewee::Session.declare({
     'debian-installer=en_US auto locale=en_US kbd-chooser/method=us ',
     'hostname=%NAME% ',
     'fb=false debconf/frontend=noninteractive ',
-    'keyboard-configuration/layout=USA keyboard-configuration/variant=USA console-setup/ask_detect=false ',
+    'keyboard-configuration/modelcode=SKIP keyboard-configuration/layout=USA keyboard-configuration/variant=USA console-setup/ask_detect=false ',
     'initrd=/install/initrd.gz -- <Enter>'
 ],
   :kickstart_port => "7122",
